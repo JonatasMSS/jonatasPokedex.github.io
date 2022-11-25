@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.img-header{
+    width: 15rem;
+    padding: 2px;
+    border-radius: 50%;
+}
+#header-text-container{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#header-text-container ul{
+    list-style: none;
+}
+#header-text-container ul li{
+    margin-bottom: 9px;
+    border-radius: 24px;
+    padding: 3px 5px;
+    min-width: 80px
+    
+}
+header{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 393px;
+    background-color:rgb(92,224,196);
+    color: white;
+    border-radius: 0px 0px 30px 30px ;
+}
+.data-container{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    min-width: 380px;
+    
+   
+}
+.data-container .data-container-item{
+    width: 100%;
+}
+
+.data-container .data-container-item ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color:rgb(143, 143, 143);
+    font-weight: 300;
+    padding: 0 1rem;
+    
+}
+.data-container-item ul li{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.base-stats-data-moves{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-around!important;
+}
+.base-stats-data-moves li{
+    margin: 2px 5px !important;
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+
+@media only screen and (min-width:700px){
+
+    header{
+        padding: 2rem;
+        flex-direction: row;
+    }
+    .img-header{
+        width: 25rem;
+    }
+    #header-text-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #header-text-container h2{
+        font-size: 3rem;
+    }
+    #header-text-container ul{
+        display: flex;
+    
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    #header-text-container ul li{
+        height: 9rem;
+        border-radius: 100%;
+        margin: 5px;
+        font-size: 2.5rem;
+        width: 9rem;
+        
+
+        
+
+    }
+    #header-text-container ul li span{
+        position: relative;
+        left: 0.9rem;
+        top: 3rem;
+    }
+
+}
+@media only screen and (min-width:1000px){
+    header{
+        height: 15%;
+
+    }
+    .img-header{
+        width: 12%;
+    }
+    #header-text-container{
+        flex-direction: row;
+    }
+    #header-text-container h2{
+        font-size: 2rem;
+        margin-left: 17px;
+    }
+    .data-container{
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: center;
+        padding: 23px;
+        font-size: 1rem;
+    }
+    #header-text-container ul li{
+        margin: 0px 5rem;
+        font-size: 1.5rem;
+        height: 5rem;
+        width: 5rem;
+    }
+    #header-text-container ul li span{
+        position: relative;
+        left: 0.9rem;
+        top: 1.6rem
+    }
+
+
+}

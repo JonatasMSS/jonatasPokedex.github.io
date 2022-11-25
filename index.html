@@ -1,0 +1,41 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/color_styles.css">
+</head>
+<body> 
+   
+    <div class="pokedex">
+        <h2>Pokedex</h2>
+        <div class="pokemons-list" id="poke-list">
+            <div class="pokemon-data water">
+                <div class="title-data">
+                    <h3>POKEMON</h3>
+                    <h4>#0000</h4>
+                </div>
+                <div class="row-data">
+                    <ul>
+                        <li class="waterType">Tipo 1</li>
+                        <li class="waterType">Tipo 2</li>
+                    </ul>
+                    <img src="assets/img/pokemon-1.png" alt="" class="logo-pokemon">
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button type="button" id="show-more">
+                Show More
+            </button>
+        </div>
+        
+    </div>
+    <script src="assets/helpers/helpers.js"></script>
+    <script src="api/pokeApi.js"></script>
+    <script src="models/pokemon_data.js"></script>
+    <script type = "module" src= "main.js"></script>
+</body>
+</html>
